@@ -1,0 +1,294 @@
+*{
+    box-sizing: border-box;
+}
+[class*="col-"]{
+    padding:15px;
+    float: left;
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px){
+    /*untuk table*/
+    .col-s-1{width: 8.33%;}
+    .col-s-2{width: 16.66%;}
+    .col-s-3{width: 25%;}
+    .col-s-4{width: 33.33%;}
+    .col-s-5{width: 41.66%;}
+    .col-s-6{width: 50%;}
+    .col-s-7{width: 58.33%;}
+    .col-s-8{width: 66.66%;}
+    .col-s-9{width: 75%;}
+    .col-s-10{width: 83.33;}
+    .col-s-11{width: 91.66%;}
+    .col-s-12{width: 100%;}
+}
+
+@media only screen and (min-width: 768px){
+    /*untuk table*/
+    .col-1{width: 8.33%;}
+    .col-2{width: 16.66%;}
+    .col-3{width: 25%;}
+    .col-4{width: 33.33%;}
+    .col-5{width: 41.66%;}
+    .col-6{width: 50%;}
+    .col-7{width: 58.33%;}
+    .col-8{width: 66.66%;}
+    .col-9{width: 75%;}
+    .col-10{width: 83.33;}
+    .col-11{width: 91.66%;}
+    .col-12{width: 100%;}
+}
+
+
+
+.head{
+    background:#1e241e;
+    height: 100px;
+    margin-top: -50px;
+
+}
+
+.head ul{
+    list-style-type: none;
+    padding:0; /*jarak antara border dengan konten (jarak dalam)*/
+    margin:0;
+    overflow: hidden;
+
+}
+.head ul li {
+    float: left;
+    padding: 3px;
+    padding-left: -30px;
+}
+
+.head ul li a{
+    text-decoration: none; /*menghilangkan garis bawah pada link*/
+    color:#fff; /*warna font pada link*/
+    text-align: center; /*rata tengah teks*/
+    padding: 18px 20px; /*13 untuk top dan botom , 15 untuk right &*/
+    font-size: 20px;
+    display:block;
+}
+.head li a:hover{ /*mouseover -> ketika mouse meraba elemen*/
+    background :rgb(7, 63, 57);
+    color: white;
+    border :2px solid grey;
+}
+
+div.header{
+   width: 100%;
+    height:500px;
+    background-image: url(hutan-alam.jpg);
+    background-repeat: no-repeat;
+    /*ini biar gambarnya tidak berulang*/
+    background-size: cover;
+    background-position: center;
+    float: left;
+
+}
+
+
+div.header h1{
+    text-align:center;
+    color:#e8e82c;
+    font-weight:bolder;
+    font-family: sans-serif;
+    font-weight: 10px;
+    font-size: 50px;
+    position: absolute;
+    top: 250px;
+    left: 500px;
+    border-bottom: 5px solid rgb(22, 150, 65);
+    padding-bottom: 20px;
+
+}
+
+    div.header h2{
+        text-align: center;
+        color:#e8e82c;
+        font-weight:bolder;
+        font-family: sans-serif;
+        font-weight: 10px;
+        font-size: 30px;
+        position: absolute;
+        top: 360px;
+        left: 400px;
+
+    }
+
+    div.about{
+        width: 100%;
+        height: 400px;
+        padding: 0;
+        margin-top: 50px;
+        float: left;
+    }
+
+    div.about .left{
+        width: 50%;
+        height: 100%;
+        float: left;
+
+    }
+    div.about .left h1{
+        text-align: right;
+        color: rgb(7, 9, 104);
+
+        font-size: 30px;
+        font-family: sans-serif;
+        font-weight: 20px;
+        border-right:  5px solid rgb(12, 49, 83);
+        padding-right: 15px;
+
+    }
+        div.about .left p{
+            text-align: right;
+            font-size: 20px;
+            color:black;
+        }
+
+        div.about .right{
+            width: 50%;
+            height: 100%;
+            float: right;
+
+        }
+
+        div.about .right img{
+            width: 350px;
+            height: 250px;
+            margin-top: 35px;
+            margin-left: 40px;
+            border: 5px solid grey;
+            border-radius: 25px;
+        }
+
+        div.Asal-usul{
+            width: 100%;
+            height: auto;
+            margin-top: 100px;
+            float: left;
+            padding: 0;
+            background: #4b524b;
+        }
+
+        div.Asal-usul .right{
+          width: 50%;
+          height: 100%;
+          float: left;
+        }
+
+        div.Asal-usul .right img{
+          width: 350px;
+          height: 250px;
+          margin-top: 35px;
+          margin-left: 40px;
+          border: 5px solid grey;
+          border-radius: 25px;
+        }
+
+        div.Asal-usul .left{
+          width: 50%;
+          height: 100%;
+          float: left;
+
+        }
+        div.Asal-usul .left h1{
+            font-family: sans-serif;
+            color: #db7bdb;
+            font-size: 30px;
+        }
+
+        div.Asal-usul .left p{
+            font-family: arial;
+            font-size: 15px;
+            color: #de92de;
+        }
+
+        .wisata {
+          width: 100%;
+          height: 400px;
+          padding: 0;
+          margin-top: 60px;
+          float: left;
+          background: white;
+          /* margin-bottom: 100px; */
+
+        }
+
+        div.box{
+          margin-top: 60px;
+            display:inline-block;
+            width:280px;
+            float:left;
+            border:2px solid #ddd;
+            margin:10px;
+        }
+        div.box img{
+            width:100%;
+            height:250px;
+        }
+
+        div.box:hover{
+            border:3px solid #8a8a8a;
+        }
+        div.box div.deskripsi{
+            padding:15px;
+            text-align:center;
+            font-family: monospace;
+        }
+
+        .kuliner{
+          width: 100%;
+          height: auto;
+          margin-top: 50px;
+          float: left;
+          padding: 0;
+          background: white;
+        }
+        .kuliner h1{
+          font-size: 30px;
+          font-family: monospace;
+          color: blue;
+        }
+        .kuliner .jajan{
+          margin-top: 60px;
+          display:inline-block;
+          width:100%;
+          float:left;
+          border:solid #000;
+
+        }
+        .kuliner .jajan img{
+            width:100%;
+            height:300px;
+        }
+
+
+        .kuliner .jajan .deskripsi{
+            padding:15px;
+            text-align:center;
+            font-family: monospace;
+        }
+        div.penutup{
+            width:100%;
+            height: 100px;
+            background: black;
+            float: left;
+            margin-top: 20px;
+        }
+
+        div.penutup .left p{
+            float: left;
+
+            margin-left: 60px;
+        }
+
+        div.penutup .right h4{
+            float: right;
+            color: white;
+            margin-right: 150px;
+            margin-bottom: 25px;
+        }
+        </style>
+        </head>
